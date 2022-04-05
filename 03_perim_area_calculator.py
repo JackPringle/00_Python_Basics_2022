@@ -10,14 +10,29 @@ def num_check(question):
         try:
 
             # ask user to enter a number 
-            response = float(input("Enter a number: "))
+            response = float(input(question))
 
             # checks number is more than zero
             if response > 0:
-                valid = True
+                return response
 
-            # outputs error if input 
+            # outputs error if input is invalid
+            else:
+                print("Please enter a number that is more than zero")
+                print()
 
+        except ValueError:
+            print(error) 
+            print()
+
+
+#Main Routine goes here
+width = num_check("width: ")
+height = num_check("Height: ")
+print()
+print("width", width)
+print("Height", height)
+print()
 
 
 
