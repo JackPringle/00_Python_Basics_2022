@@ -18,7 +18,7 @@ def num_check(question):
 
             # outputs error if input is invalid
             else:
-                print("Please enter a number that is more than zero")
+                print(error)
                 print()
 
         except ValueError:
@@ -26,13 +26,23 @@ def num_check(question):
             print()
 
 
-#Main Routine goes here
+# Main Routine goes here
 width = num_check("width: ")
 height = num_check("Height: ")
-print()
-print("width", width)
-print("Height", height)
-print()
+
+# Calculate area (width x height)
+area = width * height
+
+# Output area and perimeter (width + height) x 2
+perimeter = 2 * (width + height)
+
+# Output area and perimeter 
+print("Perimeter: {} units".format(perimeter))
+print("Area: {} square units".format(area))
+
+
+
+
 
 
 
