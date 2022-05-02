@@ -42,7 +42,10 @@ while keep_going == "":
     print("replace me with input statements")
 
     # Calulate perimeter (width + height) x 2
-    
+    width = num_check("width:")
+    height = num_check("height:")
+    perimeter = (width + height)*2
+    print ("Perimeter: {} mitres".format(perimeter))
     # Calculate the cost of the fencing (perimeter x price / meter)
 
     # Output the perimeter and cost of the fencing
