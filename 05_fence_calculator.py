@@ -52,3 +52,4 @@ while keep_going == "":
     
 print()
 print("Thanks for using the Fencing cost calculator")
+
